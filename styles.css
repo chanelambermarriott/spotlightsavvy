@@ -1,0 +1,369 @@
+/* Author: Chanel Marriott
+Date: 9 May 2024
+Version: Final Assignment GDI2100
+*/
+
+
+/*GLOBAL SETTING
+----------------------------------------
+*/
+
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 900
+
+.playfair-display-<uniquifier> {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+{display: flex;
+flex-direction: column;}
+
+
+body {
+	
+}
+
+#wrapper {
+	position: relative;
+	max-width: 1200px; 
+    width: 90%;
+	margin: 0 auto;
+}
+
+
+h1,h2,h3,h4,h5,h6 { 
+	margin: 0;
+	color:#444a57;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+p {
+	margin: 0;
+	color: black;
+	font-size:16px;
+    line-height: 1.8;
+    text-transform: initial;
+}
+img{border:none;max-width:100%; height:auto;}
+ul{
+	padding: 10;
+    margin: 10 auto;
+    list-style: none;
+}
+ul li {
+	list-style: none;
+    display: inline-block;
+	
+}
+select,input,textarea,button,.form-control{box-shadow:none;outline:0!important;}
+
+
+a {
+	color: black;
+}
+
+a:visited {
+	color: grey;
+}
+
+
+
+/* HEADER
+----------------------------------------
+*/
+
+header {
+	
+	height: 55px;
+	color: transparent;	
+}
+	
+header h1 {
+	visibility: hidden;
+}
+
+header img {
+	position: fixed;
+	top: 15px; left: 20px;
+	z-index: 999;
+    width: 50px;
+    height: auto;
+}
+
+/* NAVIGATION
+----------------------------------------
+*/
+
+nav {
+	background-color: transparent; 
+	position: fixed;
+	top: 0; 
+    left: 0;
+	width: 100%; /* = 1200px */
+    padding: 0 40px;
+    justify-content: flex-end
+}
+
+
+nav a {
+	color: black; 
+	text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+    box-sizing: border-box;
+    
+}
+
+nav a:hover {
+	background-color: darkcyan;
+    color: white;
+}
+
+
+nav ul {
+	list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav li {
+	display: inline-block;
+    margin: 10px 0;
+}
+
+
+
+/* ABOUT US PAGE */ 
+
+/* CONTENT 1
+----------------------------------------
+*/
+
+#whoami {display: grid; margin: 25px;}
+
+#whoami h2 {
+    margin: 20px 0;
+    text-align: center;
+    text-decoration: underline
+}
+
+#who img {align-content: left; width: 400px; height: 600px; padding-right: 20px;}
+
+#who img {float: left; 
+margin-right: 20px;
+margin-bottom: 20px;}
+
+#who p {
+    text-align: left;
+    padding: 0 20px;}
+
+
+
+/* CONTENT 2
+----------------------------------------
+*/
+#training {
+    background-color: whitesmoke;
+    display:grid;
+    padding: 25px;
+}
+
+#training h2 {text-decoration: underline;
+text-align: center}
+
+#training p {text-align: center;}
+
+
+/* CONTENT 3 -------------------------*/
+#resume {background-color: whitesmoke;
+    padding: 25px; display: grid;}
+
+#resume h2 {text-align: center; 
+    text-decoration: underline;}
+
+
+/*RESOURCES PAGE ------------*/
+/*CONTENT 1------------------*/
+#teachers h2 {
+    margin: 20px 0;
+    text-align: center;
+    text-decoration: underline
+}
+
+#teachers {padding: 25px; display: grid;}
+
+ #teachers p {
+    text-align: left;}
+
+#teachers-links {text-align: left}
+
+
+
+/* CONTENT 2
+----------------------------------------
+*/
+#scripts {
+    background-color: whitesmoke;
+    display:grid; padding: 25px;
+}
+
+#scripts h2 {text-decoration: underline;
+text-align: center; margin: 20px 0;}
+
+
+#script-links {text-align: left}
+
+
+/* CONTENT 3 -------------------------*/
+#tricks {padding: 25px; display: grid;}
+
+#tricks h2 {text-align: center; 
+    text-decoration: underline;
+margin: 20px 0;}
+
+.video-container {display: flex; justify-content: center; align-items: center; height: 100%;}
+
+
+
+
+
+/* SIDEBAR BLOCKQUOTE
+----------------------------------------
+*/
+#quote h2 
+{text-align: center; text-decoration: underline; margin: 20px 0;}
+
+#quote {padding: 25px; 
+display: grid; 
+background-color: whitesmoke;}
+
+blockquote {
+    background: #ffffff;
+	margin-bottom: 0;
+	padding: 30px 25px 25px 25px; /* top, right, bottom and right - clockwise */
+    text-align: center;
+    align-self: flex-end;
+}
+
+
+.quote footer {font-style: italic;}
+
+
+/* NEWS ----------*/
+
+/*CONTENT 1------------------*/
+#latestnews h2 {
+    margin: 20px 0;
+    text-align: center;
+    text-decoration: underline
+}
+
+#latestnews {padding: 25px; display: grid;}
+
+ #latestnews p {
+    text-align: left;}
+
+#teachers-links {text-align: left}
+
+.video-container {display: flex; justify-content: center; align-items: center; height: 100%;}
+
+
+/* CONTENT 2
+----------------------------------------
+*/
+#articles {
+    background-color: whitesmoke;
+    display:grid; padding: 25px;
+}
+
+#articles h2 {text-decoration: underline;
+text-align: center; margin: 20px 0;}
+
+#articles p {text-align: left}
+
+.styled-iframe {
+  width: 20px; /* Set the width */
+  height: 100%; /* Set the height */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  margin-bottom: 20px; /* Add some spacing below the iframe */
+}
+.iframes-articles {
+  display: flex;
+}
+
+.iframes-articles iframe {
+  flex: 1; /* Each iframe takes equal width */
+  border: 3px solid black; /* Add border for visual separation */
+    margin: 4px;
+}
+
+
+/* CONTENT 3 -------------------------*/
+#videos {
+    padding: 25px; display: grid;}
+
+#videos h2 {text-align: center; 
+    text-decoration: underline; margin: 20px 0;}
+
+.video-container {display: flex; justify-content: center; align-items: center; height: 100%;}
+
+
+/*CONTACT US ------------------*/ 
+
+#contact {padding: 25px; display: grid;}
+
+#contact h2 {text-align: center; text-decoration: underline; margin: 20px 0;}
+
+#contactme img {align-content: left; width: 425px; height: 100%; padding-right: 20px;}
+
+#contactme img {float: left; 
+margin-right: 20px;
+margin-bottom: 20px;}
+
+#email {padding: 25px; display: grid; background-color: whitesmoke;}
+
+#email p {text-align: center;}
+
+.submitemail {margin: 0 auto; width: 50%;
+display: flex;
+justify-content: center;}
+
+
+/* FOOTER
+----------------------------------------
+*/
+footer {
+	font-size: 0.8em;
+}
+
+
+
+/* MEDIA QUERIES 
+----------------------------------
+*/
+
+@media screen and (max-width: 1000px) {
+    #wrapper {
+        width: 100%; /* Set full width */ 
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        height: 60px; /* Decrease header height */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h2, p, a, blockquote {
+        font-size: 14px; /* Decrease font size for better readability */
+    }
+}
